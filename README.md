@@ -1,3 +1,4 @@
+
 # ClaudeCodeExample
 
 A minimal Android app built with **Jetpack Compose**, using a single-activity architecture. This project serves as a sandbox for exploring Claude Code workflows on an Android codebase.
@@ -15,6 +16,23 @@ A minimal Android app built with **Jetpack Compose**, using a single-activity ar
 - Material3 theming (light/dark support) defined in `ui/theme/`
 - Compose previews for quick iteration in Android Studio (`GreetingPreview`)
 - Basic unit and instrumented test scaffolding (JUnit, Espresso, Compose UI test)
+- `Greeting` guards against blank input, falling back to a default name instead of rendering an empty greeting
+
+## Dependencies
+
+Managed centrally via the Gradle version catalog (`gradle/libs.versions.toml`):
+
+| Library | Version |
+| --- | --- |
+| AGP | 8.9.0 |
+| Kotlin | 2.0.21 |
+| Core KTX | 1.19.0 |
+| Lifecycle Runtime KTX | 2.11.0 |
+| Activity Compose | 1.13.0 |
+| Compose BOM | 2024.09.00 |
+| JUnit | 4.13.2 |
+| AndroidX Test JUnit | 1.3.0 |
+| Espresso Core | 3.7.0 |
 
 ## Tech Stack
 
