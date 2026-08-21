@@ -2,6 +2,20 @@
 
 A minimal Android app built with **Jetpack Compose**, using a single-activity architecture. This project serves as a sandbox for exploring Claude Code workflows on an Android codebase.
 
+## App Details
+
+- **Package name:** `com.example.claudecodeexample`
+- **Application ID:** `com.example.claudecodeexample`
+- **Version:** 1.0 (versionCode 1)
+- **What it does:** Renders a single Compose screen with an edge-to-edge `Scaffold` and a `Greeting` composable that displays "Hello Android!"
+
+## Features
+
+- Edge-to-edge display via `enableEdgeToEdge()`, wrapped defensively to avoid crashes on OEM ROMs with non-standard behavior
+- Material3 theming (light/dark support) defined in `ui/theme/`
+- Compose previews for quick iteration in Android Studio (`GreetingPreview`)
+- Basic unit and instrumented test scaffolding (JUnit, Espresso, Compose UI test)
+
 ## Tech Stack
 
 - **Language:** Kotlin 2.0.21
@@ -28,6 +42,8 @@ app/src/main/java/com/example/claudecodeexample/
 
 - Android Studio (latest stable)
 - JDK 11+
+- Android SDK Platform 36 (since `compileSdk`/`minSdk`/`targetSdk` = 36)
+- A device or emulator running Android 16+ (API 36), since `minSdk` = 36
 
 ### Build & Run Commands
 
